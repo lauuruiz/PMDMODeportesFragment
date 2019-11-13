@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ibtBaloncesto"
+        android:layout_width="113dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/ibtCiclismo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baloncesto" />
+
+    <ImageButton
+        android:id="@+id/ibtCiclismo"
+        android:layout_width="113dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/ibtFutbol"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibtBaloncesto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ciclismo" />
+
+    <ImageButton
+        android:id="@+id/ibtFutbol"
+        android:layout_width="113dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibtCiclismo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/futbol" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
